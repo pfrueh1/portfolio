@@ -199,6 +199,10 @@ section h2 {
     align-self: center;
 }
 
+#superfan {
+    background-image: url(./images/Superfan-screenshot.png);
+}
+
 #horiseon {
     background-image: url(./images/horiseon-screenshot.png);
 
