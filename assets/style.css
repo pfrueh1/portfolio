@@ -200,11 +200,11 @@ section h2 {
 }
 
 #superfan {
-    background-image: url(./images/superfan-screenshot.png);
+    background-image: url('./images/superfan-screenshot.png');
 }
 
 #horiseon {
-    background-image: url(./images/horiseon-screenshot.png);
+    background-image: url('./images/horiseon-screenshot.png');
 
 
 }
