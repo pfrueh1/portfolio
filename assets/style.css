@@ -209,6 +209,10 @@ section h2 {
 
 }
 
+#myplate {
+    background-image: url('./images/myplate-screenshot.png');
+}
+
 #github {
     background-image: url(./images/github-screenshot.png);
 
