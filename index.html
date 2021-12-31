@@ -12,94 +12,129 @@
    
     <!--begin navigation header-->
     <header>
-        <h1 id="title"><span>P</span>aul <br/> <span class="indent">F</span>rueh</h1>        
+        <h1 id="title">Hello, I'm Paul.</h1> 
+        <p class="title-about">If you're looking for a developer, I'm your guy!</p>       
         
-        <nav>
-            <ul>
+        <nav class="nav">
+            <ul class="nav-links">
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me" class="nav-anchor">About Me</a>
+                </li>
+                <li >
+                    <a href="#my-work" class="nav-anchor">My Work</a>
                 </li>
                 <li>
-                    <a href="#my-work">My Work</a>
+                    <a href="#my-skills" class="nav-anchor">My Skills</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-me" class="nav-anchor">Contact Me</a>
                 </li>
+               
             </ul>
         </nav>
         
     </header>
     <!--begin navigation header-->
-    
-    <!--begin hero-->
-    <section class=hero>
-        <p>An aspiring developer</p>
-        <img src="assets/images/portrait.jpg" alt="Paul Frueh"/>
-    </section>
-    <!--end hero-->
 
 
-    <!------------------------------carousel------------------------------>
-    <div class="carousel">
-        <button class="carousel-button carousel-button-left is-hidden">
-            <img src="./assets/images/left-arrow.png" alt="">
-        </button>
-        <div class="carousel-track-container">
-            <ul class="carousel-track">
-                <li class="carousel-slide current-slide">
-                    <img class="carousel-image" src="./assets/images/myplate-screenshot.png" alt="" srcset="">
-                </li>
-                <li class="carousel-slide">
-                    <img class="carousel-image" src="./assets/images/Superfan-screenshot.png" alt="" srcset="">
-                </li>
-                <li class="carousel-slide">
-                    <img class="carousel-image" src="./assets/images/github-screenshot.png" alt="" srcset="">
-                </li>
-            </ul>
-        </div>
-        <button class="carousel-button carousel-button-right">
-            <img src="assets/images/next.png">
-        </button>
-        <div class="carousel-nav">
-            <button class="slide-indicator current-slide"></button>
-            <button class="slide-indicator"></button>
-            <button class="slide-indicator"></button>
-        </div>
-    </div>
+
+
 
 
     <!--begin about me-->
     <div class="about-me">
         <section id="about-me">
             <h2>About Me</h2>
-            <p>I am an aspiring web developer currently learning to code. Although I come from a background in blue collar work, i am committed to mastering the skills necessary to excel in web design!</p>
+            <p>A native of the sunshine state, and a perpetual challenge seeker. 
+                As someone who loves a good puzzle, coding has a natural appeal to me.
+                I look forward to filling your development needs!               
+            </p>
         </section>
     </div>
     <!--end about me-->
 
     <!--begin my work-->
+
+    <!------------------------------carousel------------------------------>
+
     <div class="my-work">
         <section id="my-work">
             <h2>My Work</h2>
-            <a href="https://pfrueh1.github.io/run-buddy/" class="button" id="run-buddy"><span> Run Buddy</span></a>
-            <div class="additional-work">
-                <a href="https://pfrueh1.github.io/SuperFan/" class="button" id="superfan"> <span>SuperFan!</span></a>
-                <a href="https://pfrueh1.github.io/Horiseon-Refactor/" class="button" id="horiseon"> <span>Horiseon Refactor</span></a>
-                <a href="https://vast-ridge-96690.herokuapp.com/" class="button" id="myplate"><span>MyPlate</span></a>
-                <a href="https://github.com/pfrueh1" class="button" id="github"><span>My Github</span></a>                
+            <div class="carousel">
+                <button class="carousel-button carousel-button-left is-hidden">
+                    <img src="./assets/images/left-arrow.png" alt="">
+                </button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide myplate current-slide">
+                            <img class="carousel-image" src="./assets/images/myplate-screenshot.png" alt="" srcset="">
+                            <div class="slide-description-container">
+                                <h3 class="slide-title">MyPlate</h3>
+                                <p class="slide-description">A social media app for sharing pictures of food! Created using Node.js, Express.js, MySQL, Sequelize, Multer, and image hosting with S3.
+                                Check out the deployed app at <a href="https://vast-ridge-96690.herokuapp.com/">on heroku</a> or the source code at 
+                                <a href="https://github.com/pfrueh1/myplate">my github!</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="carousel-slide superfan">
+                            <img class="carousel-image" src="./assets/images/Superfan-screenshot.png" alt="" srcset="">
+                            <div class="slide-description-container">
+                                <h3 class="slide-title">Superfan!</h3>
+                                <p class="slide-description">A site that allows users to search for merchandise, tickets, and song lists from their favorite 
+                                    artists whith one search query. Check out the deployed app at  <a href="https://pfrueh1.github.io/SuperFan/"> <span>SuperFan!</span></a>
+                                     or the source code at <a href="https://github.com/pfrueh1/SuperFan"> the github repository</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="carousel-slide github">
+                            <img class="carousel-image" src="./assets/images/github-screenshot.png" alt="" srcset="">
+                            <div class="slide-description-container">
+                                <h3 class="slide-title">My github</h3>
+                                <p class="slide-description">
+                                    See even more of my work, including back end only projects and command line programs, at <a href="https://github.com/pfrueh1">My Github</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-button carousel-button-right">
+                    <img src="assets/images/next.png">
+                </button>
+                <div class="carousel-nav">
+                    <button class="slide-indicator current-slide"></button>
+                    <button class="slide-indicator"></button>
+                    <button class="slide-indicator"></button>
+                </div>
             </div>
         </section>
     </div>
     <!--end my work-->
+    <section class="my-skills" id="my-skills">
+        <h2>My Skills</h2>
+        <div class="skills-list-container">
+            <ul class="skills-list">
+                <li class="skills">HTML5</li>
+                <li class="skills">CSS3</li>
+                <li class="skills">Javascript/ES6</li>
+                <li class="skills">Node.js</li>
+            </ul>
+            <ul class="skills-list">
+                <li class="skills">Express.js</li>
+                <li class="skills">MySQL/Sequelize</li>
+                <li class="skills">MongoDB/Mongoose</li>
+                <li class="skills">React.js</li>
+            </ul> 
+        </div>
+    </section>
 
     <!--begin contact me-->
     <section class="contact-me" id="contact-me">
         <h2>Contact Me!</h2>
         <p>Contact me at</p>
         <address>
-            Phone:863-812-8543<br/>
-            Email: <a href="mailto:fruehpaul@gmail.com">fruehpaul@gmail.com</a><br/>
-            LinkedIn:<a href="linkedin.com/in/paul-frueh-a99a49217">linkedin.com/in/paul-frueh-a99a49217</a>
+            <span>Phone</span>: 863-812-8543<br/>
+           <span>Email</span>: <a href="mailto:fruehpaul@gmail.com">fruehpaul@gmail.com</a><br/>
+           <span>LinkedIn</span>: <a href="linkedin.com/in/paul-frueh-a99a49217">linkedin.com/in/paul-frueh-a99a49217</a>
         </address>
     </section>
     <footer>

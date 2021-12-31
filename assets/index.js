@@ -22,7 +22,8 @@ const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide');
 }
-nextButton.addEventListener('click', e => {
+
+const nextSlide = e => {
     const currentSlide = track.querySelector('.current-slide');
     const currentDot =  dotsNav.querySelector('.current-slide');
     let targetSlide
@@ -36,7 +37,8 @@ nextButton.addEventListener('click', e => {
     }  
     changeSlide(currentSlide, targetSlide)
     updateDots(currentDot, targetDot)
-});
+}
+nextButton.addEventListener('click', nextSlide );
 previousButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const currentDot =  dotsNav.querySelector('.current-slide');
@@ -66,3 +68,5 @@ dotsNav.addEventListener('click', e => {
     changeSlide(currentSlide, targetSlide)
     updateDots(currentDot, targetDot)
 })
+
+setInterval(nextSlide, 5000)
