@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import react, {useState} from 'react';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Project from './components/Project';
 
 function App() {
+  // const [selectedSection, setSelectedSection] = useState(porftolio)
+  // const sections = [about, porftolio, contact, resume]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header
+      // selectedSection = {selectedSection}
+      // setSelectedSection = {setSelectedSection}
+      // sections = {sections}
+      ></Header>
+      <Project></Project>
+      <Footer></Footer>
     </div>
   );
 }
