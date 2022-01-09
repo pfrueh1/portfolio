@@ -2,7 +2,7 @@
 
 ## a single page application portfolio made with react to host my projects
 
-### check out the deploye app
+### check out the deployed app
 [https://pfrueh1.github.io/portfolio/](https://pfrueh1.github.io/portfolio/)
 
 ### the repo
