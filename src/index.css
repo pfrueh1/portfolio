@@ -5,17 +5,10 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: red
-  --secondary: #F3A847;
-  --tertiary: #B12704;
   --light: #fafafa;
   --dark: rgb(54, 54, 54);
-  --darker: #111111;
-  --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
   --that-blue-i-like: rgb(22, 132, 241);
+  --spacing-two: calc(1rem);
 }
 
 * {
@@ -81,7 +74,7 @@ h2 {
   font-size: 4vw;
   text-align: center;
   font-family: champagne;
-  margin-bottom: 2.5vw;
+  padding-bottom: 2.5vw;
 
 }
 
@@ -149,7 +142,6 @@ nav  li {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;
