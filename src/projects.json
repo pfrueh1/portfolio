@@ -1,49 +1,49 @@
 [
     {
-        "id" : "1",
+        "id" : 1,
         "name" : "My Plate",
-        "image" : "",
+        "image" : "The homescreen of My Plate",
         "description" : 
         "A social media site for foodies to share pics of their plates! Made possible by Node.js, Express.js, Multer, Sequelize, and Handlebars.js",
         "github" : "https://github.com/pfrueh1/myplate",
         "deployed" : "https://vast-ridge-96690.herokuapp.com/"
     },
     {
-        "id" : "2",
+        "id" : 2,
         "name" : "SuperFan",
-        "image" : "",
+        "image" : "Superfan's hero",
         "description" : "A one stop shop for any fan to find tickets, merch, and info about all their favorites musicians. Created using the TicketMaster API, Rainforest API, Wikipedia API, as well as Bulma for styling.",
         "github" : "https://github.com/pfrueh1/SuperFan",
         "deployed" : "https://pfrueh1.github.io/SuperFan/"
     },
     {
-        "id" : "3",
+        "id" : 3,
         "name" : "Budget Tracker PWA",
-        "image" : "",
+        "image" : "Example graph from budget tracker",
         "description" : "A PWA that allows you to keep track of your budget, even with poor or nonexistant internet. Made with Express.js, Node.js, Mongoose, and IndexDB",
         "github" : "https://github.com/pfrueh1/budget-tracker-pwa",
         "deployed" : "https://rocky-beach-13366.herokuapp.com/"
     },
     {
-        "id" : "4",
+        "id" : 4,
         "name" : "Social Network API",
-        "image" : "",
+        "image" : "Social Network API displayed in Insomnia",
         "description" : "An API for a hypothetical social network. Made with Express.js, Node.js, and Mongoose.",
         "github" : "https://github.com/pfrueh1/social-network-api",
         "deployed" : ""
     },
     {
-        "id" : "5",
+        "id" : 5,
         "name" : "README generator",
-        "image" : "",
+        "image" : "README generator command line prompts",
         "description" : "A command line interface application that creates custom readme files based on user input. Created with Node.js and Inquirer",
         "github" : "https://github.com/pfrueh1/readme-generator",
         "deployed" : ""
     },
     {
-        "id" : "6",
+        "id" : 6,
         "name" : "E-commerce backend",
-        "image" : "",
+        "image" : "E-com API displayed in Insomnia",
         "description" : "A backend for a potential E-commerce site. Created with Node.js, Express.js, Sequelize, and MySQL",
         "github" : "https://github.com/pfrueh1/e-com-backend",
         "deployed" : ""

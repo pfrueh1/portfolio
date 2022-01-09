@@ -5,7 +5,7 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #17f397;
+  --primary: red
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -15,13 +15,29 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
+  --that-blue-i-like: rgb(22, 132, 241);
 }
 
 * {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "retro";
+  src: local("retro"),
+  url("./fonts/Retro\ Team.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "champagne";
+  src: local("champagne"),
+  url("./fonts/Champagne.ttf") format("truetype");
+}
+
+.font, h2 {
+  font-family: "retro";
+  font-size: 4vw;
+}
 html,
 body {
   min-height: 100%;
@@ -36,8 +52,12 @@ body {
   letter-spacing: .1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Arial', cursive;
 
+}
+
+footer {
+bottom: 3px
 }
 
 h1,
@@ -53,11 +73,16 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 6vw;
+  font-family: champagne;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4vw;
+  text-align: center;
+  font-family: champagne;
+  margin-bottom: 2.5vw;
+
 }
 
 h3 {
@@ -82,42 +107,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
   text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-header {
-  background: var(--dark);
-}
-
-header a {
-  color: var(--light);
-}
-
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-}
-
-button:hover {
-  opacity: .8;
-}
-
-button[disabled] {
-  cursor: default;
-  opacity: .8;
 }
 
 img {
@@ -128,48 +118,17 @@ span[role="img"] {
   cursor: default;
 }
 
-form {
-  width: 40%;
-}
-
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-}
-
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
-}
-
 li {
   list-style: none;
 }
 
 nav a:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--that-blue-i-like);
 }
 
 nav  li {
   cursor: pointer;
-}
-
-textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
-}
-
-.container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .flex-row {
@@ -177,107 +136,15 @@ textarea {
   flex-wrap: wrap;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-end {
-  justify-content: flex-end;
-}
-
-.mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
-}
-
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
-
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-}
-
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
-}
-
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
-
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
-
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-}
-
-.card {
-  width: 25%;
-  text-align: center;
-}
-
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
 }
 
 .modalTitle {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 25px;
-}
-
-button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
 }
 
 a {
@@ -290,33 +157,122 @@ a {
 	
 }
 
-.navActive {
-  color: var(--secondary);
-}
-
 .project-list {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .project-card {
-  max-width: 25%;
-
+  max-width: 33%;
   margin: 3%;
   background: #111111;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
 }
 
 .project-title {
   text-align: center;
-  background: blue;
+  background: #111111;
   padding: 0;
   margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: inherit;
+  color: var();
 }
 
 .project-description {
   max-width: 80%;
   text-align: center;
+
+  border-radius: inherit;
+}
+
+.project-image {
+  width: 90%;
+  height: 40%;
+  align-items: center;
+  border-radius: inherit;
+}
+
+.project-deployed, .project-github {
+  max-width: 80%;
+  font-size: 1vw;
+  align-self: center;
+}
+
+.nav-list {
+  justify-content: space-evenly;
+  color: whitesmoke;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  max-width: 80%;
+  margin-bottom: auto;
+  margin-top: auto;
+  border-radius: inherit;
+}
+
+.resume-button {
+  background: rgb(221, 17, 17);
+  border-radius: 12px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-button:hover {
+  background: rgb(75, 6, 6);
+}
+
+.resume-button a:hover {
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 auto 0;
+  max-width: 75%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.signature {
+  font-size: 6vw;
+  font-family: champagne;
+  color: var(--that-blue-i-like);
+  padding-bottom: 10px;
+  text-shadow: 5px 5px 5px black;
+}
+
+.react {
+  color: var(--that-blue-i-like);
+}
+
+.resume {
+  margin-top: 10px;
+  border-radius: 6px;
 }

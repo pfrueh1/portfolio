@@ -1,19 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Nav() {
+function Nav({setSelectedSection}) {
+
     return (
         <ul className="flex-row">
             <li className="mx-2">
-                <a href="#about">About Me</a>
+                <a href="#about" onClick={setSelectedSection('about')}>About Me</a>
             </li>
             <li className="mx-2">
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio" onClick={setSelectedSection('portfolio')}>Portfolio</a>
             </li>
             <li className="mx-2">
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={setSelectedSection('contact')}>Contact</a>
             </li>
             <li className="mx-2">
-                <a href="#resume">Resume</a>
+                <a href="#resume" onClick={setSelectedSection('resume')}>Resume</a>
             </li>
         </ul>
     )
