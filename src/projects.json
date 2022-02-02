@@ -47,5 +47,13 @@
         "description" : "A backend for a potential E-commerce site. Created with Node.js, Express.js, Sequelize, and MySQL",
         "github" : "https://github.com/pfrueh1/e-com-backend",
         "deployed" : ""
+    },
+    {
+        "id" : 7,
+        "name" : "Destination Dance",
+        "image" : "Homescreen of Destination Dance",
+        "description" : "An inventory management app for a local dance studio built with React.js, GraphQL, and Mongoose",
+        "github" : "https://github.com/Kadargo63/excelsior-inventory",
+        "deployed" : "https://shrouded-forest-00815.herokuapp.com/"
     }
 ]

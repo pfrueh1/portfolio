@@ -1,5 +1,4 @@
-import React, {useEffect} from "react";
-import Nav from "../Nav";
+
 
 function Header({setSelectedSection}) {
 
